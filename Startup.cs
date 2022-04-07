@@ -29,7 +29,7 @@ namespace TodoWebApp
         {
             if (Environment.IsDevelopment())
             {
-                services.AddMvc().AddRazorPagesOptions(options=> {
+                services.AddMvc().AddRazorPagesOptions(options=> { //making to To-do's index page as main page
                 options.Conventions.AddPageRoute("/Todos/Index", "");
 
                 });

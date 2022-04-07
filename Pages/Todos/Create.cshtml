@@ -6,8 +6,8 @@
 }
 
 <h1>Create</h1>
-
-<h4>Todo</h4>
+@*Creating to-do*@
+<h4>Todo</h4> 
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,11 +18,6 @@
                 <input asp-for="Todo.Name" class="form-control" />
                 <span asp-validation-for="Todo.Name" class="text-danger"></span>
             </div>
-            @*<div class="form-group">
-             //   <label asp-for="Todo.CompletionTime" class="control-label"></label>
-                <input asp-for="Todo.CompletionTime" class="form-control" />
-                <span asp-validation-for="Todo.CompletionTime" class="text-danger"></span>
-            </div>*@
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
