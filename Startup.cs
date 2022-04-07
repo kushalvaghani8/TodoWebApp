@@ -29,7 +29,10 @@ namespace TodoWebApp
         {
             if (Environment.IsDevelopment())
             {
-                services.AddRazorPages();
+                services.AddMvc().AddRazorPagesOptions(options=> {
+                options.Conventions.AddPageRoute("/Todos/Index", "");
+
+                });
 
                 services.AddDbContext<TodoContext>(options =>
                         options.UseSqlite(Configuration.GetConnectionString("TodoContext")));

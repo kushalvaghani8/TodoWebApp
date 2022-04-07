@@ -17,8 +17,7 @@
                 @Html.DisplayNameFor(model => model.Todo[0].Name)
             </th>
             <th>
-                @*@Html.CheckBoxFor(model => model.Todo[0].Completed)*@
-               @*@Html.DisplayNameFor(model => model.Todo[0].Completed)*@
+                @Html.DisplayNameFor(model => model.Todo[0].IsDone)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Todo[0].CompletionTime)
@@ -33,7 +32,7 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.CheckBoxFor(modelItem => item.Completed)
+                @Html.CheckBoxFor(modelItem => item.IsDone)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CompletionTime)
